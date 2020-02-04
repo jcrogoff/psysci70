@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>CareerPeak</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/mountains.jpg" width="30" height="30" alt="">
+    CareerPeak
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Our Mission</a>
+          <a class="dropdown-item" href="#">Our Team</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Contact Us</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <button class="btn btn-sm btn-outline-secondary" type="submit">Sign Up</button>
+    </form>
+  </div>
+</nav>
+
+<ReactFullpage />
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who are we?</h3>
+  <img src="/mountains.jpg" height="350">
+  <h3>CareerPeak is a Career Discovery Platform for non-STEM students</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Why does Career Peak Need to Exist?</h3>
+  <p>Since when did our society decide only degrees in STEM (science, technology, engineering, mathematics) are valuable. This is a major problem when you consider that over 80% of students are in non-STEM majors and 60% of non-STEM are women and half are non-white. I talked to 50 recruiters who said they are committed to increasing the diversity in their companies. How do they expect to do that without tapping into the largest pool of diverse candidates. So enter CareerPeak,  a career discovery platform that helps non-STEM students find their value in the job market and helps recruiters find diverse candidates they value. Unlike current recruiter facing solutions that expect students to navigate the recruitment progress on their own, CareerPeak is a student facing platform that provides a guided career finding experience. Students answer questions, connect with company advisors, explore careers and eventually create a targeted resume for the jobs they decide to pursue. Students don’t need to know their whole future, they just need CareerPeak so they have a place to start. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">The Team</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Juliana Rogoff is a junior at Harvard University studying computer science with a passion for film and VFX.</p>
+      <img src="https://yt3.ggpht.com/a-/AN66SAwEMaVDrks3ZNqiqwWJCEQnx72UNGEKwfhszw=s900-mo-c-c0xffffffff-rj-k-no" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Gabriel Rogoff is a senior at Boston University studying economics with a passion for psychology.</p>
+      <img src="https://media.licdn.com/dms/image/C4E03AQFIwwueSg6oFw/profile-displayphoto-shrink_200_200/0?e=1552521600&v=beta&t=FHx76TSzruu6rQReyRFyvmBxgNELfmgvOPGt2Jn3WwA" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!--Load React components -->
+  <script src="scripts/fullpage.js"></script>
+
+</body>
+</html>
