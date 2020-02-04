@@ -4,12 +4,12 @@
 // =============================================================================
 
 // call the packages we need
-const express    = require('express');        // call express
-const app        = express();                 // define our app using express
+const express = require('express'); // call express
+const app = express(); // define our app using express
 const bodyParser = require('body-parser');
 const path = require('path');
-var passport = require('passport')
-    , LocalStrategy = require('passport-local').Strategy;
+var passport = require('passport'),
+  LocalStrategy = require('passport-local').Strategy;
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -29,13 +29,10 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-
-
-var port = process.env.PORT || 8080;        // set our port
+var port = process.env.PORT || 8080; // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
-
 
 // more routes for our API will happen here
 
@@ -45,7 +42,6 @@ var port = process.env.PORT || 8080;        // set our port
 //res.sendFile(path.join(__dirname + '/homepage.html'));
 //});
 
-
 // REGISTER OUR ROUTES -------------------------------
 // import router config
 app.use(require('./router'));
@@ -53,4 +49,4 @@ app.use(require('./router'));
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('fitflyt is running on port ' + port);
+console.log('PSYSCI 70 Website is running on port ' + port);
