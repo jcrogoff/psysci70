@@ -38,9 +38,15 @@ var port = process.env.PORT || 8080; // set our port
 
 // view homepage at http://localhost:8080
 
-//app.get('/', function(req, res) {
-//res.sendFile(path.join(__dirname + '/homepage.html'));
-//});
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/homepage.html'));
+});
+app.get('/about', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/about.html'));
+});
+app.get('/assign1', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/assign1.html'));
+});
 
 // REGISTER OUR ROUTES -------------------------------
 // import router config
@@ -49,4 +55,4 @@ app.use(require('./router'));
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('fitflyt is running on port ' + port);
+console.log('PSYSCI website is running on port ' + port);
