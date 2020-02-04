@@ -49,4 +49,4 @@ app.use(require('./router'));
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('PSYSCI 70 Website is running on port ' + port);
+console.log('fitflyt is running on port ' + port);
