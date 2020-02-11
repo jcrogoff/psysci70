@@ -47,6 +47,9 @@ app.get('/about', function(req, res) {
 app.get('/assign1', function(req, res) {
   res.sendFile(path.join(__dirname + '/views/assign1.html'));
 });
+app.get('/assign2', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/assign2.html'));
+});
 
 // REGISTER OUR ROUTES -------------------------------
 // import router config
