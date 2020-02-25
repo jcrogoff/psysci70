@@ -93,72 +93,79 @@
       <div class="row">
         <div class="col-sm-4">
           <p>
-            Our assignment this week was to create something that moves (with
-            joints -- although I got special permission to sort of ignore that
-            requirement). I was really interested in perhaps modeling some of
-            the sculptures of Joshua Allen Harris. An artist who was inspired by
-            all the trash on New York city streets. Joshua Allen Harris used
-            trash bags and wind from the New York subway to create whimsical art
-            pieces.
-          </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Rshn5zIMJ4s"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p>
-            I decided I wanted to try to make a camel as that is my favorite
-            animal. I started off by doing some modeling with paper as this was
-            faster than working with the trash bags and gave me some idea about
-            scale.
+            Our assignment this week was to create something with arduino. I was
+            particularly excited to get to do some cool kind of light display.
+            After a bit of research on what kinds of projects might be possible,
+            I found these shadow boxes:
           </p>
           <img
-            src="/images/papermodel.png"
+            src="/images/shadhowboxexample1.jpeg"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
-            I then moved to the trash bags. This material ended up being a lot
-            more difficult to work with than I anticipated. It actually took a
-            surprising number of hours to arrive at the camel you see today.
-            Here is a picture of me working as Peter chose to send home the
-            wrong girl last night.
+            Source:
+            https://www.kidspot.com.au/things-to-do/activity-articles/make-a-shadow-puppet-theatre/news-story/d9ed634b2e68caea28c52c263771a400
           </p>
           <img
-            src="/images/bachelor.jpeg"
+            src="/images/shadhowboxexample2.jpeg"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
-            Once I finished I had a LOT of trouble either finding a powerful
-            enough fan or adjusting the cut of the legs and the attachment to
-            the fan to actually get the camel to inflate. This video below shows
-            where I'm at right now -- the camel partially inflates but this fan
-            is pretty weak. I tried a couple different leg hole configurations
-            to try to help it inflate and I found that a diagonal cut was best.
+            Source:
+            https://jydisplayandsigns.com.au/lightbox/Round-Light-Boxes/Double-Sided/RBOXR3D
+          </p>
+          <p>
+            After some additional research I found this tutorial online about
+            how to make a shadow light box. I didn't follow this tutorial
+            exaxtly, rather used the steps he did for inspiration for my process
+            and project.
           </p>
           <img
-            src="/images/diagCUT.png"
+            src="/images/tutorial.png"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
-            This is the current state of my trash bag camel.
+            Source: https://www.instructables.com/id/LED-Shadow-Box/
           </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Nf89KYEqkFw"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <p>
+            I decided I wanted to make a shadow light box with some kind of
+            heart design. I redrew and adapted a heart image I found online to
+            serve my purposes.
+          </p>
+          <img
+            src="/images/heartai.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>
+            I then used the laser cutter to cut out this heart design as well as
+            a backing heart of equal size to be the background for the shadow
+            box.
+          </p>
+          <img
+            src="/images/heartcardboard.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>
+            I then decided instead of just making an ON-OFF light box I wanted
+            to make one which was sensitive to light -- that way my lightbox
+            could detect when the lights were off and provide ~mood lighting~
+            when needed. So now its time to move to coding (thank goodness). To
+            do this light detection I used a phototransistor. First, I just
+            wanted to get the phototransitor to work and see how it detected
+            light. I found the following circuit off a paper on pubmed. I used
+            this circuit and then wrote my own program which would just report
+            the reading of the phototransitor to the computer console.
+          </p>
           <p>
             P.S. A newer and pretteir website is in the works and still ~COMING
             SOON~.
