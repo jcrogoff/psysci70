@@ -77,6 +77,7 @@
               <a class="dropdown-item" href="/assign2">Assignment 2</a>
               <a class="dropdown-item" href="/assign3">Assignment 3</a>
               <a class="dropdown-item" href="/assign4">Assignment 4</a>
+              <a class="dropdown-item" href="/assign5">Assignment 5</a>
             </div>
           </li>
           <li class="nav-item">
@@ -92,83 +93,102 @@
     <div class="container-fluid bg-1 text-center">
       <div class="row">
         <div class="col-sm-4">
+          <h2>DESIGN</h2>
           <p>
-            Our assignment this week was to create something with arduino. I was
-            particularly excited to get to do some cool kind of light display.
-            After a bit of research on what kinds of projects might be possible,
-            I found these shadow boxes:
+            Our assignment this week was to design and 3D print something not
+            easily made with subtractive methods. I started off doing some
+            research on what 3D printers are used for in professional product
+            construction. I thought this would be a good place to look as people
+            are unlikely to use 3D printers in professional circumstances if
+            they are not sinficantly helpful (as printers are quite expensive).
+            I realized that for the most part, the argument was to use 3D
+            printers to make parts that would otherwise need lots of asssembly.
+            I found images of these lattice structures online -- which are used
+            as a way to have strong but less densse material. These are very
+            difficult to make by subtractice methods
           </p>
           <img
-            src="/images/shadhowboxexample1.jpeg"
+            src="/images/lattice.jpeg"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
             Source:
-            https://www.kidspot.com.au/things-to-do/activity-articles/make-a-shadow-puppet-theatre/news-story/d9ed634b2e68caea28c52c263771a400
+            https://www.quora.com/What-things-can-be-manufactured-with-a-3D-printer-that-are-impossible-to-make-otherwise
+          </p>
+          <p>
+            So I set out to make one of these structures. However, it became
+            clear very quickly that my skills in fusion were greatly limiting my
+            ability to build such a complex structure. So then I started
+            thinking about what is kind of difficult to assemble precisely. I
+            realized things with curves are extreamly difficult. I then started
+            to play around in fusion and came up with the follow design which
+            has curved edges, a sphere trapped on the inside, and a sloping top.
           </p>
           <img
-            src="/images/shadhowboxexample2.jpeg"
+            src="/images/fusion3d1.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+          <img
+            src="/images/fusion3d2.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+
+          <img
+            src="/images/fusion3d3.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+          <img
+            src="/images/fusion3d4.png"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+          <img
+            src="/images/fusion3d4.png"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
-            Source:
-            https://jydisplayandsigns.com.au/lightbox/Round-Light-Boxes/Double-Sided/RBOXR3D
+            I wish I had taken some more images as I was playing around because
+            its difficult to see the sphere insisde the object. If there's one
+            thing I learned from this design expirence in fusion it is that next
+            time I really need to take the time to make more bodies. Right now
+            it is virtually impossible to edit the size of the sphere, or to put
+            anything else inside the object, because it is all one component.
+            Next time I will separate everything into multiple components that
+            way I can edit one thing at a time without having to start the whole
+            component from scratch. This division would also have made it easier
+            to take screenshots of the different angles of my object.
           </p>
+          <h2>SLICING</h2>
           <p>
-            After some additional research I found this tutorial online about
-            how to make a shadow light box. I didn't follow this tutorial
-            exaxtly, rather used the steps he did for inspiration for my process
-            and project.
+            Next, I fed my 3D design into the slicer. Because my design was
+            quite large and complex, I chose the print setting 0.20mm SPEED MK3.
+            Which was one step of priciseness above the draft stage but still
+            quite fast MK3. I also set the infill at 10% as Rob said this was
+            sufficient and would still print quickly. In the following image you
+            can see the progression of the print. In this image you can alos get
+            a better idea of what the sphere looks like hidden inside the
+            object.
           </p>
           <img
-            src="/images/tutorial.png"
+            src="/images/sliced.gif"
             class="img-responsive margin"
             style="width:100%"
             alt="Image"
           />
           <p>
-            Source: https://www.instructables.com/id/LED-Shadow-Box/
-          </p>
-          <p>
-            I decided I wanted to make a shadow light box with some kind of
-            heart design. I redrew and adapted a heart image I found online to
-            serve my purposes.
-          </p>
-          <img
-            src="/images/heartai.png"
-            class="img-responsive margin"
-            style="width:100%"
-            alt="Image"
-          />
-          <p>
-            I then used the laser cutter to cut out this heart design as well as
-            a backing heart of equal size to be the background for the shadow
-            box.
-          </p>
-          <img
-            src="/images/heartcardboard.png"
-            class="img-responsive margin"
-            style="width:100%"
-            alt="Image"
-          />
-          <p>
-            I then decided instead of just making an ON-OFF light box I wanted
-            to make one which was sensitive to light -- that way my lightbox
-            could detect when the lights were off and provide ~mood lighting~
-            when needed. So now its time to move to coding (thank goodness). To
-            do this light detection I used a phototransistor. First, I just
-            wanted to get the phototransitor to work and see how it detected
-            light. I found the following circuit off a paper on pubmed. I used
-            this circuit and then wrote my own program which would just report
-            the reading of the phototransitor to the computer console.
-          </p>
-          <p>
-            P.S. A newer and pretteir website is in the works and still ~COMING
-            SOON~.
+            And after letting the printer run for three hours -- here is the
+            final object.
           </p>
         </div>
       </div>
