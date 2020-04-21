@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>PSYSCI 70</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/mountains.jpg" width="30" height="30" alt="" />
+        PSYSCI 70
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Assignments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/assign1">Assignment 1</a>
+              <a class="dropdown-item" href="/assign2">Assignment 2</a>
+              <a class="dropdown-item" href="/assign3">Assignment 3</a>
+              <a class="dropdown-item" href="/assign4">Assignment 4</a>
+              <a class="dropdown-item" href="/assign5">Assignment 5</a>
+              <a class="dropdown-item" href="/assign6">Assignment 6</a>
+              <a class="dropdown-item" href="/assign7">Assignment 7</a>
+              <a class="dropdown-item" href="/assign8">Assignment 8</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <ReactFullpage />
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-1 text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Internet</h2>
+          <p>
+            This week we were supposed to connect two boards. I followed Rob's
+            tutorial no how to do so but ran into an issue. It turns out the
+            pull-up code within the small green button was broken. It was
+            sending charge (and resistance) to the wrong pin. Thus, I had to
+            hardwire the circuit myself. We submitted a github issue so
+            hopefully this problem gets fixed soon on their end! BUt for now we
+            have a short cut of how to keep the tutorial working.
+          </p>
+          <p>Origional Tutorial (code is same)</p>
+          <a
+            href="https://roberthart56.github.io/SCFAB/SC_lab/Networking/networking/digital_io/index.html"
+          >
+            Wired communication: digital I/O.</a
+          >
+          <p>
+            New Circuit:
+          </p>
+          <img
+            src="/images/fixedcir.jpeg"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!--Load React components -->
+    <script src="scripts/fullpage.js"></script>
+  </body>
+</html>
