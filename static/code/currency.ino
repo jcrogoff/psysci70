@@ -42,11 +42,6 @@ int calculate_degrees (int strength) {
 }
 
 void loop(){ 
-  
-   // Make servos go to 0 degrees 
-   Servo_EUR.write(0); 
-   Servo_US.write(0); 
-   Servo_YEN.write(0);
 
    //Calculate Degree Change
    Serial.print("EUR");
@@ -56,10 +51,26 @@ void loop(){
    Serial.print("YEN");
    int YEN_deg = calculate_degrees(strength_YEN);
    delay(1000); 
+
+   //Calculate Degree Start
+   Serial.print("EUR");
+   int EUR_start = EUR_deg=0 ? 180 : 0;
+   Serial.print("US");
+   int US_start = 180 - (US_deg=0 ? 180 : 0);;
+   Serial.print("YEN");
+   int YEN_start = YEN_deg=0 ? 180 : 0;
+   delay(1000); 
+  
+   // Make servos go to 0 degrees 
+   Servo_EUR.write(0); 
+   Servo_US.write(0); 
+   Servo_YEN.write(0);
+
+
    
    // Make servos go to desired degree
-   Servo_EUR.write(EUR_deg); 
+   Servo_EUR.write(180); 
    Servo_US.write(US_deg); 
-   Servo_YEN.write(YEN_deg); 
+   Servo_YEN.write(0); 
    delay(1000); 
 }
